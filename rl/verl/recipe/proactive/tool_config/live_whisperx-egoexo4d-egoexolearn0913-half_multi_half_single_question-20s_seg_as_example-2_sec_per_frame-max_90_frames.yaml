@@ -1,0 +1,20 @@
+tools:
+  - class_name: "verl.tools.online_video_provider.OnlineVideoProvider"
+    config: {
+      "annotation_paths": [
+        "../data/live_whisperx-egoexo4d-egoexolearn0913-half_multi_half_single_question-2_sec_per_frame-20s_seg_as_example-0714-max_90_frames-user_turns.json",
+      ]
+    }
+    tool_schema:
+      type: "function"
+      function:
+        name: "online_video_provider"
+        description: "A tool to fetch the next user turn in video-text online conversation"
+        parameters:
+          type: "object"
+          properties:
+            question_id:
+              type: "string"
+            turn_id:
+              type: "int"
+          required: ["question_id", "turn_id"]
