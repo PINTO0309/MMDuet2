@@ -20,10 +20,14 @@ Key Features:
 
 - Responses are neither too sparse nor too dense and repetitive, which was a common issue in previous works.
 
-(Demo Video Here)
+- Example Videos:
+
+https://github.com/user-attachments/assets/bb0ef0d5-99ee-4c4d-8236-87b894381ffb
+
+https://github.com/user-attachments/assets/46a5de08-6c56-4595-a763-bd4ed5d2c02f
 
 
-## Quick Start: A Real-World Demo on your own laptop camera!
+## Quick Start: A Real-World Demo with your own laptop camera!
 Here we assume you have a GPU server as backend, and a laptop with camera as frontend:
 
 - On the GPU server, create conda environment and start the backend server:
