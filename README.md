@@ -5,7 +5,7 @@
 <br>
 
 <p align="left">
-📖 <a href="https://arxiv.org/abs/xxx" target="_blank">Paper</a> · 
+📖 <a href="https://www.arxiv.org/abs/2512.06810" target="_blank">Paper</a> · 
 ⭐ <a href="https://github.com/yellow-binary-tree/MMDuet2" target="_blank">GitHub</a> · 
 📊 <a href="https://huggingface.co/datasets/wangyueqian/MMDuet2-data" target="_blank">Dataset</a> · 
 🤗 <a href="https://huggingface.co/wangyueqian/MMDuet2" target="_blank">Checkpoints</a>
@@ -55,10 +55,8 @@ After starting the frontend, you can type in the terminal to input your text, an
 - When inference on offline video understanding (Video-MME, LongVideoBench, etc.), MMDuet2 is identical to [Qwen2.5-VL-Instruct](https://huggingface.co/Qwen/Qwen2.5-VL-3B-Instruct). You can use frameworks including [lmms-eval](https://github.com/EvolvingLMMs-Lab/lmms-eval) just like working on Qwen2.5-VL.
 
 
-## Star Count
-
-
-## Licence
+## Star History
+[![Star History Chart](https://api.star-history.com/svg?repos=yellow-binary-tree/mmduet2&type=date&legend=bottom-right)](https://www.star-history.com/#yellow-binary-tree/mmduet2&type=date&legend=bottom-right)
 
 
 ## Acknowledgement
