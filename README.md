@@ -37,6 +37,8 @@ sudo apt update \
 && sudo add-apt-repository ppa:deadsnakes/ppa \
 && sudo apt update \
 && sudo apt install -y python3.10 python3.10-venv python3.10-dev
+
+git clone https://github.com/PINTO0309/MMDuet2.git && cd MMDuet2
 python3.10 -m venv .venv
 source .venv/bin/activate
 
