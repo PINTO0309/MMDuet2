@@ -5,9 +5,9 @@
 <br>
 
 <p align="left">
-📖 <a href="https://www.arxiv.org/abs/2512.06810" target="_blank">Paper</a> · 
-⭐ <a href="https://github.com/yellow-binary-tree/MMDuet2" target="_blank">GitHub</a> · 
-📊 <a href="https://huggingface.co/datasets/wangyueqian/MMDuet2-data" target="_blank">Dataset</a> · 
+📖 <a href="https://www.arxiv.org/abs/2512.06810" target="_blank">Paper</a> ·
+⭐ <a href="https://github.com/yellow-binary-tree/MMDuet2" target="_blank">GitHub</a> ·
+📊 <a href="https://huggingface.co/datasets/wangyueqian/MMDuet2-data" target="_blank">Dataset</a> ·
 🤗 <a href="https://huggingface.co/wangyueqian/MMDuet2" target="_blank">Checkpoints</a>
 </p>
 </div>
@@ -32,9 +32,11 @@ Here we assume you have a GPU server as backend, and a laptop with camera as fro
 
 - On the GPU server, create conda environment and start the backend server:
 ```bash
-cd demo/
-conda create -n mmduet2-infer python=3.10
-conda activate mmduet2-infer
+python3.10 -m venv .venv
+source .venv/bin/activate
+
+cd demo
+pip install torchvision==0.19.0 torch==2.4.0 wheel==0.46.3 packaging==26.0
 pip install -r requirements.txt
 python api_server.py
 ```
