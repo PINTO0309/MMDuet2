@@ -49,7 +49,7 @@ python api_server.py
 - Download `demo/frontend.py` to laptop and start the frontend:
 ```bash
 pip install requests, opencv-python
-python frondend.py --server_url http://xxx.xxx.xxx.xxx:8000   # (your server ip)
+python frontend.py --server_url http://127.0.0.1:8000   # (your server ip)
 ```
 After starting the frontend, you can type in the terminal to input your text, and type "RESET" to remove all previous frames and messages.
 
