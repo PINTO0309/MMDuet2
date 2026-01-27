@@ -32,7 +32,11 @@ Here we assume you have a GPU server as backend, and a laptop with camera as fro
 
 - On the GPU server, create conda environment and start the backend server:
 ```bash
-sudo apt install -y python3.10 python3.10-venv python3.10-dev
+sudo apt update \
+&& sudo apt install -y software-properties-common \
+&& sudo add-apt-repository ppa:deadsnakes/ppa \
+&& sudo apt update \
+&& sudo apt install -y python3.10 python3.10-venv python3.10-dev
 python3.10 -m venv .venv
 source .venv/bin/activate
 
