@@ -65,10 +65,8 @@ def send_text(server_url):
 
 def main():
     parser = argparse.ArgumentParser(description="Frontend client for video streaming and text input")
-    parser.add_argument("--server_url", type=str, default="http://localhost:8000",
-                       help="Server URL (default: http://localhost:8000)")
-    parser.add_argument("--frame_interval", type=float, default=2,
-                       help="Time interval between frames (default: 2 seconds)")
+    parser.add_argument("--server_url", type=str, default="http://localhost:8000", help="Server URL (default: http://localhost:8000)")
+    parser.add_argument("--frame_interval", type=float, default=2, help="Time interval between frames (default: 2 seconds)")
     args = parser.parse_args()
 
     server_url = args.server_url
