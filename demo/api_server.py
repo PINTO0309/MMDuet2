@@ -110,7 +110,7 @@ class ProactiveInferenceAPIClient(ProactiveInferenceClient):
 
 def create_app(client):
     app = Flask(__name__)
-    
+
     @app.route('/add_image', methods=['POST'])
     def add_image_endpoint():
         if 'image' not in request.files:
@@ -119,21 +119,21 @@ def create_app(client):
         image = Image.open(io.BytesIO(image_file.read()))
         result = client.add_image(image, debug_print=True)
         return jsonify({**result})
-    
+
     @app.route('/add_text', methods=['POST'])
     def add_text_endpoint():
         data = request.json
         if not data or 'text' not in data:
             return jsonify({'error': 'No text provided'}), 400
-        
+
         client.add_text(data['text'])
         return jsonify({'status': 'success'})
-    
+
     @app.route('/reset', methods=['POST'])
     def reset_endpoint():
         client.reset()
         return jsonify({'status': 'success'})
-    
+
     return app
 
 
