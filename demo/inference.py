@@ -44,7 +44,7 @@ def get_args():
 class ProactiveInferenceClient:
     def __init__(self, args=None, model=None, processor=None) -> None:
         self.args = args
-        
+
         self.model = model if model is not None else Qwen2_5_VLForConditionalGeneration.from_pretrained(
             args.llm_pretrained, torch_dtype=torch.bfloat16, attn_implementation=args.attn_implementation,
         ).eval().to('cuda:0')
@@ -114,7 +114,7 @@ class ProactiveInferenceClient:
                 elif isinstance(input, (list, tuple)):
                     num_frames += self._recursive_stat_num_frames(input)
         return num_frames
-            
+
     def _encode_query(self, debug_print=False):
         newly_added_turns = list()
         while True:
@@ -192,7 +192,7 @@ class ProactiveInferenceClient:
             reply_text = self.must_reply_prompt + reply_text
         self.history.append({'role': 'assistant', 'content': reply_text, 'time': self.video_time})
 
-        if debug_print: 
+        if debug_print:
             print("kvcache length now:", self.past_key_values.get_seq_length())
 
     def inference(self, debug_print=False):
